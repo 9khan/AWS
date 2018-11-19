@@ -1,0 +1,11 @@
+ubuntu@ip-172-31-91-224:~$ ls
+khan.pem  L1_NV  L1.pem
+ubuntu@ip-172-31-91-224:~$ ls -ltr
+total 12
+drwxrwxr-x 2 ubuntu ubuntu 4096 Nov 19 19:49 L1_NV
+-r-------- 1 ubuntu ubuntu 1696 Nov 19 19:52 L1.pem
+-r-------- 1 ubuntu ubuntu 1696 Nov 19 20:01 khan.pem
+ubuntu@ip-172-31-91-224:~$ scp -i khan.pem khan.pem ubuntu@172.31.42.134:/home/ubuntu/
+Permission denied (publickey).
+lost connection
+ubuntu@ip-172-31-91-224:~$
